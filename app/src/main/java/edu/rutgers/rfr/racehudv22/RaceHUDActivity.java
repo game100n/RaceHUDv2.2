@@ -18,7 +18,8 @@ public class RaceHUDActivity extends Activity
     public void onAttachedToWindow()
     {
         super.onAttachedToWindow();
-        //getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        setContentView(R.layout.racehud_view);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         // Open the options menu right away.
         openOptionsMenu();
     }
@@ -27,7 +28,6 @@ public class RaceHUDActivity extends Activity
     public void onDetachedFromWindow()
     {
         super.onDetachedFromWindow();
-        //getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     @Override
@@ -45,7 +45,6 @@ public class RaceHUDActivity extends Activity
             case R.id.action_stop:
                 /** Stop the service which will unpublish the live card. */
                 stopService(new Intent(this, RaceHUDService.class));
-                //getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
