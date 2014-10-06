@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:keepScreenOn="true">
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="145dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/initial_speed"
+        android:id="@+id/speedText"
+        android:layout_gravity="center"
+        android:gravity="top|center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="70sp" />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="145dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/MPH"
+        android:id="@+id/speedLabel"
+        android:layout_gravity="center"
+        android:gravity="bottom|center"
+        android:textColor="@android:color/white"
+        android:textSize="50sp" />
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Launch-related strings. -->
+    <string name="app_name">RaceHUDv2.2</string>
+    <string name="title_activity_racehud_service">RaceHUD Service</string>
+    <string name="startRaceHUD">SHOW_ME_MY_SPEED</string>
+
+    <!-- App strings. -->
+    <string name="initial_speed">-.-</string>
+
+    <!-- Description strings. -->
+    <string name="MPH">mph</string>
+
+    <!-- Menu item strings. -->
+    <string name="action_stop">Stop</string>
+
+</resources>
